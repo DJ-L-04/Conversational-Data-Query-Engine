@@ -23,30 +23,6 @@ A REST API that lets users upload CSV/Excel files and query them in natural lang
 - JWT authentication — each user can only access their own files
 - File validation — type checking, size limits, parse validation
 
-## Quick Start
-
-```bash
-git clone <repo-url>
-cd chatbot
-cp .env.example .env   # add your OPENAI_API_KEY
-
-docker-compose up --build
-# API at http://localhost:8000
-# Docs at http://localhost:8000/docs
-```
-
-## Running Locally
-
-```bash
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-
-# Start Postgres and Redis
-docker-compose up db redis -d
-
-uvicorn app.main:app --reload
-```
 
 ## API Endpoints
 
